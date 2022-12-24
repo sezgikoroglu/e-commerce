@@ -1,0 +1,33 @@
+// @import "global.scss";
+@import "global.scss";
+ html {
+    height: 100%;
+  }
+  
+  body {
+    min-height: 100%;
+    background-color: #F0F0F0;;
+   
+  }
+  
+  .container {
+    margin: 0 auto;
+  }
+  
+  /* Common xs1, xs2 mobil*/
+   @media all and (max-width: 767px) {
+     .container {
+       width: calc(100% - 32px);
+     }
+   }
+  /* Common sm1, sm2 tablet */
+  @media all and (min-width: 768px) and (max-width: 1319px) {
+    .container {
+      width:  calc(100% - 64px);
+    }
+  }
+  @media all and (min-width: 1320px) {
+    .container {
+      width: 1400px;
+    }
+}
